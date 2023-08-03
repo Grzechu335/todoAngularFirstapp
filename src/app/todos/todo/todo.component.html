@@ -1,0 +1,17 @@
+<div class="grid grid-cols-4 px-4 py-2 border-black border-[1px] rounded-lg">
+  <p>{{ todo.title }}</p>
+  <input type="checkbox" [(ngModel)]="todo.done" />
+  <button
+    type="button"
+    class="px-4 py-2 font-semibold text-white bg-blue-500 rounded"
+  >
+    Edit
+  </button>
+  <button
+    type="button"
+    class="px-4 py-2 font-semibold text-white bg-red-500 rounded"
+    (click)="removeTodo()"
+  >
+    Delete
+  </button>
+</div>
